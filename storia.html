@@ -1,0 +1,99 @@
+<!-- FILE: storia.html -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo - Mauro il Restauratore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo"><img src="./logo.png" style="border-radius: 100px; max-height:75px"> Mauro il Restauratore</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="storia.html" class="nav-link active">Chi Siamo</a></li>
+                
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>La Nostra Storia</h1>
+            <p>Oltre 40 anni di dedizione al restauro</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Mauro il Restauratore</h2>
+        <div class="story-container">
+            <div class="story-text">
+                <h3>Una vita dedicata alla conservazione</h3>
+                <p>Dal 1985, Mauro dedica la sua vita alla conservazione e al restauro dei mobili antichi. Iniziato come
+                    apprendista presso i grandi maestri restauratori torinesi, ha perfezionato nel tempo le tecniche
+                    tradizionali che caratterizzano il suo lavoro.</p>
+                <p>Ogni pezzo che entra nel nostro laboratorio è trattato con il massimo rispetto per la sua storia e
+                    originalità. Utilizziamo esclusivamente materiali naturali e tecniche conservative, garantendo che i
+                    vostri mobili non perdano il loro valore artistico e storico.</p>
+                <p>La nostra filosofia si basa sulla valorizzazione dell'autenticità: restauriamo per preservare, non
+                    per trasformare. Ogni intervento è documentato e reversibile, secondo gli standard internazionali
+                    del restauro conservativo.</p>
+                <h3 style="margin-top: 2rem;">Certificazioni</h3>
+                <p>✓ Maestro artigiano certificato<br>✓ Esperto in restauro conservativo<br>✓ Specialista in dorature e
+                    lacche<br>✓ Membro dell'Associazione Restauratori Italiani</p>
+            </div>
+            <div class="story-image">
+                <img src="./esempio.jpg" alt="Laboratorio artigianale">
+                <img src="./lab.jpg" alt="Laboratorio artigianale">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="recensioni">
+        <h2>Recensioni dei Nostri Clienti</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <div class="review-text">"Mauro ha trasformato il comò di mia nonna in una vera opera d'arte. La qualità
+                    del lavoro è eccezionale e i dettagli curati al millimetro. Lo consiglio vivamente!"</div>
+                <div class="review-author">Anna Rossi</div>
+                <div class="review-date">Novembre 2024</div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <div class="review-text">"Professionalità e dedizione. Il mio tavolo '800 è tornato a nuova vita. Mauro
+                    ha saputo rispettare l'autenticità dell'opera mantenendo la sua bellezza originale."</div>
+                <div class="review-author">Marco Bianchi</div>
+                <div class="review-date">Ottobre 2024</div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <div class="review-text">"Non sapevo come procedere con il restauro della credenza ereditata dalla
+                    nonna. I consigli di Mauro sono stati preziosissimi e il risultato è straordinario."</div>
+                <div class="review-author">Francesca Moretti</div>
+                <div class="review-date">Settembre 2024</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Restauro Mobili Antichi - Torino | P.IVA 12345678901</p>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+        document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => navMenu.classList.remove('active')));
+    </script>
+</body>
+
+</html>

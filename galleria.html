@@ -1,0 +1,107 @@
+<!-- FILE: galleria.html -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Mauro il Restauratore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo"><img src="./logo.png"
+                    style="border-radius: 100px; max-height:75px"> Mauro il Restauratore</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="galleria.html" class="nav-link active">Galleria</a></li>
+                <li><a href="storia.html" class="nav-link">Chi Siamo</a></li>
+
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Galleria Lavori</h1>
+            <p>I nostri restauri più importanti</p>
+        </div>
+    </header>
+
+    <!-- Galleria -->
+    <section>
+        <h2>I Nostri Lavori</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+                    alt="Comò restaurato">
+                <div class="gallery-overlay">
+                    <h3>Comò Luigi XVI</h3>
+                    <p>Restauro completo con tecniche tradizionali</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                    alt="Sedia antica">
+                <div class="gallery-overlay">
+                    <h3>Sedia Barocca</h3>
+                    <p>Recupero strutturale e lucidatura a tampone</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551298370-9d3d53740c72?w=600&h=400&fit=crop"
+                    alt="Tavolo antico">
+                <div class="gallery-overlay">
+                    <h3>Tavolo '800</h3>
+                    <p>Restauro conservativo del piano intarsiato</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&h=400&fit=crop"
+                    alt="Credenza">
+                <div class="gallery-overlay">
+                    <h3>Credenza Piemontese</h3>
+                    <p>Ripristino delle decorazioni originali</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=600&h=400&fit=crop"
+                    alt="Scrittoio">
+                <div class="gallery-overlay">
+                    <h3>Scrittoio '700</h3>
+                    <p>Restauro completo con dorature a foglia</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=600&h=400&fit=crop"
+                    alt="Poltrona">
+                <div class="gallery-overlay">
+                    <h3>Poltrona Liberty</h3>
+                    <p>Restauro e ritappezzeria artigianale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restauro Mobili Antichi - Torino | P.IVA 12345678901</p>
+        <p>Maestro artigiano certificato - Restauro conservativo e artistico</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+        document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => navMenu.classList.remove('active')));
+    </script>
+</body>
+
+</html>

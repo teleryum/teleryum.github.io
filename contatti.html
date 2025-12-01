@@ -1,0 +1,87 @@
+<!-- FILE: contatti.html -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Mauro il Restauratore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="./style.css"/>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo"><img src="./logo.png" style="border-radius: 100px; max-height:75px"> Mauro il Restauratore</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="storia.html" class="nav-link">Chi Siamo</a></li>
+                
+                <li><a href="contatti.html" class="nav-link active">Contatti</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Contattaci</h1>
+            <p>Saremo felici di aiutarti</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Informazioni di Contatto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Laboratorio</strong>
+                    Via Roma 123, 10100 Torino (TO)
+                </div>
+                <div class="contact-item">
+                    <strong>Telefono</strong>
+                    +39 011 123 4567
+                </div>
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    info@restauromobili.it
+                </div>
+                <div class="contact-item">
+                    <strong>Orari</strong>
+                    Lun-Ven: 9:00 - 18:00<br>
+                    Sab: 9:00 - 13:00
+                </div>
+                <div class="contact-item">
+                    <strong>Su appuntamento</strong>
+                    Sopralluoghi e preventivi gratuiti
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restauro Mobili Antichi - Torino | P.IVA 12345678901</p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([45.0703, 7.6869], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+        const marker = L.marker([45.0703, 7.6869]).addTo(map);
+        marker.bindPopup('<b>Restauro Mobili Antichi</b><br>Via Roma 123, Torino').openPopup();
+
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+        document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => navMenu.classList.remove('active')));
+    </script>
+</body>
+
+</html>
