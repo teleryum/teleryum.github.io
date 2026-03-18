@@ -1,0 +1,22 @@
+{
+  "name": "Studio Notarile Lidia Concilio – Chiusi",
+  "short_name": "Notaio Chiusi",
+  "description": "Studio Notarile Lidia Concilio a Chiusi (SI). Compravendite, successioni, atti societari e molto altro.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FDF6E3",
+  "theme_color": "#3A7BA8",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "assets/profilo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/profilo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

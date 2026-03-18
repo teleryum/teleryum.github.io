@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.notaiolidiaconcilio.it/sitemap.xml
+
+# Studio Notarile Lidia Concilio – Chiusi (SI)
+# Via Fabio Filzi, 53043 Chiusi (SI)
+# Tel: 0578 779165

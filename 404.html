@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina non trovata – Studio Notarile Lidia Concilio | Chiusi (SI)</title>
+  <meta name="description" content="La pagina che cerchi non è disponibile. Torna alla homepage dello Studio Notarile Lidia Concilio a Chiusi (SI).">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3A7BA8">
+</head>
+<body>
+
+<header>
+  <nav aria-label="Navigazione principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" title="Torna alla homepage – Notaio Lidia Concilio Chiusi">
+        <span class="nome">Lidia Concilio</span>
+        <span class="titolo">Notaio – Chiusi (SI)</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" title="Homepage">Home</a></li>
+        <li><a href="servizi.html" title="Servizi notarili">Servizi</a></li>
+        <li><a href="chi-siamo.html" title="Chi siamo">Chi Siamo</a></li>
+        <li><a href="contatti.html" class="nav-cta" title="Contatti">Contattaci</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="err-page" role="main" aria-labelledby="err-title">
+    <div class="err-num" aria-hidden="true">404</div>
+    <h2 id="err-title">Pagina Non Trovata</h2>
+    <p>La pagina che cerchi non esiste o è stata spostata.<br>Torna alla homepage dello Studio Notarile Lidia Concilio a Chiusi.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-primary" title="Torna alla homepage del notaio di Chiusi">← Torna alla Homepage</a>
+      <a href="servizi.html" class="btn btn-outline" title="Vedi i servizi notarili a Chiusi">Servizi Notarili</a>
+      <a href="contatti.html" class="btn btn-outline" title="Contatta il notaio di Chiusi">Contattaci</a>
+    </div>
+    <div style="margin-top:3rem;padding:2rem;background:var(--bianco);border-radius:8px;max-width:420px;box-shadow:0 4px 20px rgba(0,0,0,.08);">
+      <h3 style="color:var(--celeste-deep);margin-bottom:1rem;font-size:1.1rem;">Hai bisogno di aiuto?</h3>
+      <p style="font-size:.9rem;">Puoi contattarci direttamente:</p>
+      <p style="margin:0;"><a href="tel:+390578779165" title="Chiama il notaio di Chiusi" style="font-weight:700;color:var(--celeste-dark);">📞 0578 779165</a></p>
+      <p style="margin:0;"><a href="mailto:lconcilio@notariato.it" title="Scrivi al notaio di Chiusi" style="font-weight:700;color:var(--celeste-dark);">✉️ lconcilio@notariato.it</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-col">
+        <span class="footer-brand-name">Lidia Concilio</span>
+        <span class="footer-brand-tag">Notaio – Chiusi (SI)</span>
+        <p class="footer-desc">Studio Notarile a Chiusi (SI): professionalità e riservatezza per privati e imprese della provincia di Siena.</p>
+      </div>
+      <div class="f-col">
+        <h4>Servizi</h4>
+        <ul>
+          <li><a href="compravendita.html">Compravendita Immobiliare</a></li>
+          <li><a href="successioni.html">Successioni e Donazioni</a></li>
+          <li><a href="societario.html">Atti Societari</a></li>
+          <li><a href="procure.html">Procure e Deleghe</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="index.html">Homepage</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Recapiti</h4>
+        <ul class="f-nap">
+          <li><span class="ico">📍</span><span>Via Fabio Filzi, Chiusi (SI) 53043</span></li>
+          <li><span class="ico">📞</span><a href="tel:+390578779165">0578 779165</a></li>
+          <li><span class="ico">📱</span><a href="tel:+393291924128">329 192 4128</a></li>
+          <li><span class="ico">✉️</span><a href="mailto:lconcilio@notariato.it">lconcilio@notariato.it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Studio Notarile Lidia Concilio – Chiusi (SI)</span>
+      <span><a href="contatti.html">Contatti</a> · <a href="chi-siamo.html">Chi Siamo</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => { const o = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', o); });
+</script>
+</body>
+</html>
